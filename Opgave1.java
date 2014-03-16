@@ -32,11 +32,11 @@ public class Opgave1 {
         for(i=0; i < aantal; i++)
         {
             System.out.println("Wat is de voornaam van de student?");
-            String voornaam = scanner.next();
+            voornaam = scanner.next();
             System.out.println("Wat is de achternaam van de student?");
-            String achternaam = scanner.next();
+            achternaam = scanner.next();
             System.out.println("Wat is het studentnummer van de student?");
-            int studentnummer = scanner.nextInt();
+            studentnummer = scanner.nextInt();
             groepje.voegToe(new Student(voornaam, achternaam, studentnummer));
         }
         System.out.println("De groep bevat nu: \n");
