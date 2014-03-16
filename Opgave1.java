@@ -23,7 +23,7 @@ public class Opgave1 {
         System.out.println("Hoe groot moet de groep studenten gemaakt worden?");
         Scanner scanner = new Scanner(System.in);
         int aantal = scanner.nextInt();
-        Groep groepje = new Groep(aantal);
+        Groep groepje = new Groep(aantal);  
         System.out.println("De studenten moeten ingevoerd worden.");
         int i;
         String voornaam;
@@ -42,6 +42,25 @@ public class Opgave1 {
         System.out.println("De groep bevat nu: \n");
         //System.out.println(groepje.getStudent(aantal).toString()); // Ik snap niet wat hier precies mis mee is? 
         System.out.println(groepje);
+        System.out.println("Lidnummer en nieuwe voor- en achternaam?");
+        int lidnummer;
+        lidnummer = scanner.nextInt();
+        if(lidnummer < 0)
+        {
+            System.exit(1);
+        }
+        else
+        {
+            String voor;
+            String achter;
+            System.out.println("Wat is de voornaam van de student?");
+            voor = scanner.next();
+            System.out.println("Wat is de achternaam van de student?");
+            achter = scanner.next();
+            groepje.getStudent(lidnummer).setNaam(voor, achter);
+        }
+        System.out.println("De groep bevat nu: \n");
+        System.out.println(groepje);        
     }
     /**
      * @param args the command line arguments
