@@ -36,7 +36,7 @@ public class Opgave1 {
             int studentnummer = scanner.nextInt();            
         }
         System.out.println("De groep bevat nu: \n");
-        System.out.println(groepje.getStudent(aantal)); // Ik snap niet wat hier precies mis mee is? 
+        System.out.println(groepje.getStudent(aantal).toString()); // Ik snap niet wat hier precies mis mee is? 
     }
     /**
      * @param args the command line arguments
