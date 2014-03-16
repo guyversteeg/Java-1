@@ -28,7 +28,7 @@ public class Opgave1 {
         int i;
         String voornaam;
         String achternaam;
-        String studentnummer;
+        int studentnummer;
         for(i=0; i < aantal; i++)
         {
             System.out.println("Wat is de voornaam van de student?");
