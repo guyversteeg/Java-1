@@ -42,7 +42,7 @@ public class Groep {
         String s;
         s = "";
         Student stud;
-        for (i = 0; i <= studenten.length; i++)
+        for (i = 0; i < studenten.length; i++)
         {
            stud = studenten[i];
            s += stud.toString() + "\n";
