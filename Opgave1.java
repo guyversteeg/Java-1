@@ -26,6 +26,9 @@ public class Opgave1 {
         Groep groepje = new Groep(aantal);
         System.out.println("De studenten moeten ingevoerd worden.");
         int i;
+        String voornaam;
+        String achternaam;
+        String studentnummer;
         for(i=0; i < aantal; i++)
         {
             System.out.println("Wat is de voornaam van de student?");
@@ -33,10 +36,12 @@ public class Opgave1 {
             System.out.println("Wat is de achternaam van de student?");
             String achternaam = scanner.next();
             System.out.println("Wat is het studentnummer van de student?");
-            int studentnummer = scanner.nextInt();            
+            int studentnummer = scanner.nextInt();
+            groepje.voegToe(new Student(voornaam, achternaam, studentnummer));
         }
         System.out.println("De groep bevat nu: \n");
-        System.out.println(groepje.getStudent(aantal)); // Ik snap niet wat hier precies mis mee is? 
+        //System.out.println(groepje.getStudent(aantal).toString()); // Ik snap niet wat hier precies mis mee is? 
+        System.out.println(groepje);
     }
     /**
      * @param args the command line arguments
